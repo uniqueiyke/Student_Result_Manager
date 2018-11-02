@@ -1,0 +1,49 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/sch_logo.png</file>
+        <file>images/res_slip.ico</file>
+        <file>images/rsh.ico</file>
+    </qresource>
+    <qresource prefix="/win">
+        <file>images/images/win/editcopy.png</file>
+        <file>images/images/win/editcut.png</file>
+        <file>images/images/win/editpaste.png</file>
+        <file>images/images/win/editredo.png</file>
+        <file>images/images/win/editundo.png</file>
+        <file>images/images/win/exportpdf.png</file>
+        <file>images/images/win/filenew.png</file>
+        <file>images/images/win/fileopen.png</file>
+        <file>images/images/win/fileprint.png</file>
+        <file>images/images/win/filesave.png</file>
+        <file>images/images/win/textbold.png</file>
+        <file>images/images/win/textcenter.png</file>
+        <file>images/images/win/textitalic.png</file>
+        <file>images/images/win/textjustify.png</file>
+        <file>images/images/win/textleft.png</file>
+        <file>images/images/win/textright.png</file>
+        <file>images/images/win/textunder.png</file>
+        <file>images/images/win/zoomin.png</file>
+        <file>images/images/win/zoomout.png</file>
+    </qresource>
+    <qresource prefix="/mac">
+        <file>images/images/mac/editcopy.png</file>
+        <file>images/images/mac/editcut.png</file>
+        <file>images/images/mac/editpaste.png</file>
+        <file>images/images/mac/editredo.png</file>
+        <file>images/images/mac/editundo.png</file>
+        <file>images/images/mac/exportpdf.png</file>
+        <file>images/images/mac/filenew.png</file>
+        <file>images/images/mac/fileopen.png</file>
+        <file>images/images/mac/fileprint.png</file>
+        <file>images/images/mac/filesave.png</file>
+        <file>images/images/mac/textbold.png</file>
+        <file>images/images/mac/textcenter.png</file>
+        <file>images/images/mac/textitalic.png</file>
+        <file>images/images/mac/textjustify.png</file>
+        <file>images/images/mac/textleft.png</file>
+        <file>images/images/mac/textright.png</file>
+        <file>images/images/mac/textunder.png</file>
+        <file>images/images/mac/zoomin.png</file>
+        <file>images/images/mac/zoomout.png</file>
+    </qresource>
+</RCC>

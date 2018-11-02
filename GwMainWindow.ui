@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GwMainWindow</class>
+ <widget class="QMainWindow" name="GwMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_New_Manager"/>
+    <addaction name="actionOpen_Manager"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_All"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrint_Preview"/>
+    <addaction name="actionPrint"/>
+    <addaction name="actionExport_PDF"/>
+    <addaction name="separator"/>
+    <addaction name="actionClose"/>
+    <addaction name="actionE_xit"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionAdd_Student"/>
+    <addaction name="actionCreate_Grade_Book"/>
+    <addaction name="actionUpdate_Quiz_Score"/>
+    <addaction name="actionCreateReportSlip"/>
+    <addaction name="actionCreateResultSheet"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionAbout_Qt"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_New_Manager"/>
+   <addaction name="actionOpen_Manager"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionSave_All"/>
+   <addaction name="separator"/>
+   <addaction name="actionAdd_Student"/>
+   <addaction name="actionCreate_Grade_Book"/>
+   <addaction name="actionUpdate_Quiz_Score"/>
+  </widget>
+  <action name="action_New_Manager">
+   <property name="icon">
+    <iconset theme="document-new" resource="images.qrc">
+     <normaloff>:/win/images/images/win/filenew.png</normaloff>:/win/images/images/win/filenew.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New Manager</string>
+   </property>
+   <property name="toolTip">
+    <string>Start a new ResultManager</string>
+   </property>
+   <property name="statusTip">
+    <string>Create new ResultManager</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOpen_Manager">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/win/images/images/win/fileopen.png</normaloff>:/win/images/images/win/fileopen.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Open Manager</string>
+   </property>
+   <property name="toolTip">
+    <string>Open an existing Result Manager</string>
+   </property>
+   <property name="statusTip">
+    <string>Open a ResultManager</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/win/images/images/win/filesave.png</normaloff>:/win/images/images/win/filesave.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save</string>
+   </property>
+   <property name="toolTip">
+    <string>Save changes made in the Table</string>
+   </property>
+   <property name="statusTip">
+    <string>Save Changes made in the Table</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_All">
+   <property name="text">
+    <string>Save &amp;All</string>
+   </property>
+   <property name="toolTip">
+    <string>Save Changes in all GradeBooks</string>
+   </property>
+   <property name="statusTip">
+    <string>Save Changes made in the Tables</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+   <property name="statusTip">
+    <string>Close the application</string>
+   </property>
+  </action>
+  <action name="actionE_xit">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+   <property name="statusTip">
+    <string>Exit all instants of the application</string>
+   </property>
+  </action>
+  <action name="actionAdd_Student">
+   <property name="text">
+    <string>Add Student</string>
+   </property>
+   <property name="toolTip">
+    <string>Add Student        Alt+A</string>
+   </property>
+   <property name="statusTip">
+    <string>Add Student to the Manager</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+A</string>
+   </property>
+  </action>
+  <action name="actionCreate_Grade_Book">
+   <property name="text">
+    <string>Add Grade Book</string>
+   </property>
+   <property name="toolTip">
+    <string>Add Grade Book   Alt+G</string>
+   </property>
+   <property name="statusTip">
+    <string>Add a new GradeBook</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+G</string>
+   </property>
+  </action>
+  <action name="actionUpdate_Quiz_Score">
+   <property name="text">
+    <string>Update Quiz Score</string>
+   </property>
+   <property name="statusTip">
+    <string>Update Student's grades</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/win/images/images/win/fileprint.png</normaloff>:/win/images/images/win/fileprint.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print</string>
+   </property>
+   <property name="statusTip">
+    <string>Print The current Page</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionExport_PDF">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/win/images/images/win/exportpdf.png</normaloff>:/win/images/images/win/exportpdf.png</iconset>
+   </property>
+   <property name="text">
+    <string>Export PDF</string>
+   </property>
+   <property name="statusTip">
+    <string>Export file as a PDF file</string>
+   </property>
+  </action>
+  <action name="actionPrint_Preview">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/win/images/images/win/fileprint.png</normaloff>:/win/images/images/win/fileprint.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print Preview</string>
+   </property>
+   <property name="toolTip">
+    <string>Preview  page     Ctrl+Shift+P</string>
+   </property>
+   <property name="statusTip">
+    <string>Preview the page before printing</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+P</string>
+   </property>
+  </action>
+  <action name="actionCreateReportSlip">
+   <property name="text">
+    <string>Create Student Report Slip</string>
+   </property>
+   <property name="toolTip">
+    <string>Create Result Slip for the Student in the current class</string>
+   </property>
+   <property name="statusTip">
+    <string>Create Result Slip for the Student in the current class</string>
+   </property>
+  </action>
+  <action name="actionCreateResultSheet">
+   <property name="text">
+    <string>Create ResultSheet</string>
+   </property>
+   <property name="toolTip">
+    <string>Create ResultSheet for this student</string>
+   </property>
+   <property name="statusTip">
+    <string>Create ResultSheet for the student in the selected row</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About </string>
+   </property>
+   <property name="toolTip">
+    <string>About the application</string>
+   </property>
+   <property name="statusTip">
+    <string>About this application</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+   <property name="statusTip">
+    <string>About Qt</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
